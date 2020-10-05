@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crab.Android", "Crab\Crab.Android\Crab.Android.csproj", "{218E8703-D2E1-4EAA-A55C-960A9068D59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crab", "Crab\Crab\Crab.csproj", "{A89E42A6-695D-4E00-849F-FBB7483C8DC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{218E8703-D2E1-4EAA-A55C-960A9068D59B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A89E42A6-695D-4E00-849F-FBB7483C8DC5}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3938267C-B318-4A3B-AFEB-E5A14296821D}
+	EndGlobalSection
+EndGlobal
