@@ -37,13 +37,20 @@ namespace Crab.Models
         }
         public Visite GetVisiteAFaire()
         {
+            Visite v = null;
             List<Borne> mesBornes = new List<Borne>();
             foreach(Borne laBorne in this.lesBornes)
             {
               if(laBorne.estAReviser())  mesBornes.Add(laBorne);
             }
 
-          return new Visite(this, mesBornes);
+            if (mesBornes.Count > 0)
+            {
+                v = new Visite(this, mesBornes);
+                
+            }
+
+          return v;
 
         }
         #endregion

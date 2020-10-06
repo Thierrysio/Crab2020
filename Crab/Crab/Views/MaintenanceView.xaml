@@ -4,9 +4,7 @@
              x:Class="Crab.Views.MaintenanceView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{Binding NombreVisites}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

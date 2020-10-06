@@ -14,11 +14,12 @@ namespace Crab.Models
         private TypeBorne leType;
         #endregion
         #region Constructeur
-        public Borne(int idBorne, DateTime dateDerniereRevision, int indiceCompteurUnites)
+        public Borne(int idBorne, DateTime dateDerniereRevision, int indiceCompteurUnites,TypeBorne unType)
         {
             this.idBorne = idBorne;
             this.dateDerniereRevision = dateDerniereRevision;
             this.indiceCompteurUnites = indiceCompteurUnites;
+            this.leType = unType;
             CollClasseBorne.Add(this);
         }
         #endregion

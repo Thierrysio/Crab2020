@@ -41,6 +41,8 @@ namespace Crab.Models
         }
         public void affecterVisite(Visite uneVisite)
         {
+            uneVisite.changerEtat();
+            uneVisite.getDureeTotal();
             this.lesVisites.Add(uneVisite);
         }
         public List<Visite> getLesVisites()

@@ -34,12 +34,12 @@ namespace Crab.Models
 
         public int getDureeTotal()
         {
-            int res = 0;
+            this.DureeTotale = 0;
             foreach (Borne laBorne in this.lesBornes)
             {
-                res += laBorne.getDureeRevision();
+                this.DureeTotale += laBorne.getDureeRevision();
             }
-            return res;
+            return this.DureeTotale;
         }
         public string getEtat()
         {

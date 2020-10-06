@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Crab.Models
@@ -17,8 +18,8 @@ namespace Crab.Models
         #region Constructeur
         public Maintenance()
         {
-            _lesTechniciens = new List<Technicien>();
-            _lesStations = new List<Station>();
+            _lesTechniciens = Technicien.CollClasseTechnicien.ToList<Technicien>();
+            _lesStations = Station.CollClasseStation.ToList<Station>();
             _lesVisites = new List<Visite>();
             collClasseMaintenance.Add(this);
         }
@@ -33,8 +34,13 @@ namespace Crab.Models
         {
             foreach(Station uneStation in this.LesStations)
             {
-                if (uneStation.GetVisiteAFaire() != null) this.LesVisites.Add(uneStation.GetVisiteAFaire());
+                if (uneStation.GetVisiteAFaire() != null)
+                {
+                    this.LesVisites.Add(uneStation.GetVisiteAFaire());
+                    
+                }
             }
+            this.AffecterVisites();
         }
         public void AffecterVisites()
         {
@@ -48,7 +54,7 @@ namespace Crab.Models
                         t = unTechnicien;
                     }
                 }
-                t.LesVisites.Add(uneVisite);
+                t.affecterVisite(uneVisite);
             }
         }
         #endregion
